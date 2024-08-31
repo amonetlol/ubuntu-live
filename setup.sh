@@ -6,6 +6,9 @@
 # Instalar os pacotes necessários
 sudo apt install -y open-vm-tools-desktop gnome-shell-extension-manager curl htop wget libcanberra-gtk-module
 
+# Definir o tamanho do dock para 18
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 18
+
 # Pre Install
 mkdir ~/.src
 
