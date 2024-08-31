@@ -6,10 +6,6 @@
 # Instalar os pacotes necessários
 sudo apt install -y open-vm-tools-desktop gnome-shell-extension-manager curl htop wget libcanberra-gtk-module
 
-# Instalar extensões no GNOME Extension Manager
-gnome-extensions install ip-finder@extensions.gnome.org
-gnome-extensions install vitals@extensions.gnome.org
-
 # Pre Install
 mkdir ~/.src
 
@@ -31,3 +27,9 @@ firefox https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-
 
 # Aplicar o tema Spaceship para o Firefox
 firefox https://addons.mozilla.org/firefox/addon/spaceship_theme/
+
+# Instalar extensões no GNOME Extension Manager
+#gnome-extensions install ip-finder@extensions.gnome.org
+#gnome-extensions install vitals@extensions.gnome.org
+firefox https://extensions.gnome.org/extension/2983/ip-finder/
+firefox https://extensions.gnome.org/extension/1460/vitals/
