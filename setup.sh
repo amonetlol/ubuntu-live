@@ -15,3 +15,6 @@ firefox https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-
 
 # Executar o script do Firefox-UI-Fix
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/black7375/Firefox-UI-Fix/master/install.sh)"
+
+# Aplicar o tema Spaceship para o Firefox
+firefox https://addons.mozilla.org/firefox/addon/spaceship-theme/
