@@ -7,9 +7,9 @@
 show_message() {
     echo -e "\e[1;32m#######################################\e[0m"
     echo -e "\e[1;32m#        \e[1;31mExtensions Manager\e[1;32m           #\e[0m"
-    echo -e "\e[1;32m#                                   #\e[0m"
-    echo -e "\e[1;32m#  \e[1;34m- ip finder                     \e[1;32m#\e[0m"
-    echo -e "\e[1;32m#  \e[1;34m- vitals                        \e[1;32m#\e[0m"
+    echo -e "\e[1;32m#                                                     #\e[0m"
+    echo -e "\e[1;32m#  \e[1;34m- ip finder                     \e[1;32m   #\e[0m"
+    echo -e "\e[1;32m#  \e[1;34m- vitals                        \e[1;32m   #\e[0m"
     echo -e "\e[1;32m#######################################\e[0m"
 }
 
@@ -37,7 +37,7 @@ firefox
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/black7375/Firefox-UI-Fix/master/install.sh)"
 
 # Instalar o uBlock Origin no Firefox
-firefox https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-607454-latest.xpi
+firefox https://addons.mozilla.org/firefox/addon/ublock-origin/
 
 # Aplicar o tema Spaceship para o Firefox
 firefox https://addons.mozilla.org/firefox/addon/spaceship_theme/
