@@ -14,7 +14,7 @@ show_message() {
 }
 
 # Instalar os pacotes necessários
-sudo apt install -y open-vm-tools-desktop gnome-shell-extension-manager curl htop wget libcanberra-gtk-module
+sudo apt install -y open-vm-tools-desktop gnome-shell-extension-manager curl htop wget libcanberra-gtk-module neovim vim
 
 # Definir o tamanho do dock para 18
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 18
