@@ -1,0 +1,45 @@
+Ubuntu packages:
+
+git curl htop neovim eza tldr btm nodes npm fd-find ripgrep nala python3-pynvim tree-sitter-cli duf
+
+Bashrc:
+# --- ls --- #
+alias lg="ls | grep"
+alias ls='exa -lah --color=always --group-directories-first --icons'
+alias ll='exa -lah --color=always --group-directories-first --icons'
+alias lr='exa -R --color=always --icons --oneline'
+alias lrv1='exa -R --color=always --icons --oneline --level=1'
+alias lrv2='exa -R --color=always --icons --oneline --level=2'
+alias ld='exa -lah --color=always --group-directories-first --icons --sort mod' # sort by date/time
+alias tree='exa --tree --icons --group-directories-first'
+#alias lt="command ls -l | awk 'NR>1 {print $9}'"
+lt() {
+  command ls -l | awk 'NR>1 {print $9}'
+  #command exa -l --color=always --group-directories-first --icons | awk '{print $7, $8, $9}'
+}
+
+# --- APT/Nala (Ubuntu Stuffs) --- #
+alias ups='sudo snap refresh'
+alias asel='nala list --installed | grep'
+alias ase='nala search'
+alias ain='sudo nala install -y'
+alias are='sudo nala remove'
+alias orf='sudo nala autopurge -y && sudo nala autoremove -y'
+alias up2='sudo nala update && sudo nala upgrade -y'
+alias reflec='sudo nala fetch'
+
+# --- Misc --- #
+alias ft='sh ~/.src/ufetch/ufetch-ubuntu'
+alias al='nvim ~/.bashrc'
+alias .r='source ~/.bashrc'
+alias man='tldr'
+alias top='btm'
+alias nvim='lvim'
+alias nv='lvim'
+alias ag='alias | grep'
+alias hg='history | grep'
+alias df='duf'
+
+# --- Configs --- #
+eval "$(starship init bash)"
+export PATH=/home/craig/.local/bin:$PATH
