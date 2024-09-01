@@ -43,3 +43,6 @@ alias df='duf'
 # --- Configs --- #
 eval "$(starship init bash)"
 export PATH=/home/craig/.local/bin:$PATH
+
+Remover:
+sudo apt remove libreoffice*
