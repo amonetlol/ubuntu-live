@@ -10,12 +10,14 @@ mv nvim-linux-x86_64.appimage /opt/nvim/nvim
 
 echo 'export PATH="$PATH:/opt/nvim/"' >> ~/.bashrc
 
-python3 python3-pip python3-venv yt-dlp xclip python3-pynvim luarocks ripgrep fd-find npm nodejs tree-sitter-cli build-essential
+sudo apt install python3 python3-pip python3-venv yt-dlp xclip python3-pynvim luarocks ripgrep fd-find npm nodejs tree-sitter-cli build-essential -y
 git clone https://github.com/amonetlol/neovim-kickstart-config.git ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 rm -rf ~/.config/nvim/.gitignore
 
 # fastfetch
+curl -LO https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb
+sudo apt install ./fastfetch-linux-amd64.deb
 mkdir -p "${HOME}/.config/fastfetch/"
 curl -sSLo "${HOME}/.config/fastfetch/config.jsonc" https://raw.githubusercontent.com/ChrisTitusTech/mybash/main/config.jsonc
 
