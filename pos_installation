@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p ~/.fonts
 unzip ~/Downloads/Cousine.zip -d ~/.fonts
 fc-cache -vf
@@ -22,6 +24,7 @@ mkdir -p "${HOME}/.config/fastfetch/"
 curl -sSLo "${HOME}/.config/fastfetch/config.jsonc" https://raw.githubusercontent.com/ChrisTitusTech/mybash/main/config.jsonc
 
 # starship
+curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 # setup 1
 # wget -O ~/.config/starship.toml https://raw.githubusercontent.com/amonetlol/terminal-bash/refs/heads/main/starship.toml
