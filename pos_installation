@@ -1,8 +1,17 @@
 #!/bin/bash
 
+# Verifica se o arquivo Cousine.zip existe na pasta Downloads
+if [[ ! -f ~/Downloads/Cousine.zip ]]; then
+    echo "Erro: O arquivo Cousine.zip não foi encontrado em ~/Downloads."
+    echo "Por favor, baixe o arquivo Cousine.zip na pasta Downloads e tente novamente."
+    exit 1
+fi
+
 mkdir -p ~/.fonts
 unzip ~/Downloads/Cousine.zip -d ~/.fonts
 fc-cache -vf
+gsettings set org.gnome.desktop.interface monospace-font-name 'Cousine Nerd Font Mono 12'
+echo -e "Nerd Fonts: \ue0b0 \ue0a0"
 
 #Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
