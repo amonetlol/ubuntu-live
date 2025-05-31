@@ -20,7 +20,7 @@ sudo mkdir -p /opt/nvim
 sudo mv nvim-linux-x86_64.appimage /opt/nvim/nvim
 echo 'export PATH="$PATH:/opt/nvim/"' >> ~/.bashrc
 
-sudo apt install python3 python3-pip python3-venv yt-dlp xclip python3-pynvim luarocks ripgrep fd-find npm nodejs tree-sitter-cli build-essential -y
+sudo apt install python3 python3-pip python3-venv yt-dlp xclip python3-pynvim luarocks ripgrep fd-find npm nodejs build-essential -y
 git clone https://github.com/amonetlol/neovim-kickstart-config.git ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 rm -rf ~/.config/nvim/.gitignore
