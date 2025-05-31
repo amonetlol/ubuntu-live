@@ -9,7 +9,6 @@ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x8
 chmod u+x nvim-linux-x86_64.appimage
 sudo mkdir -p /opt/nvim
 sudo mv nvim-linux-x86_64.appimage /opt/nvim/nvim
-
 echo 'export PATH="$PATH:/opt/nvim/"' >> ~/.bashrc
 
 sudo apt install python3 python3-pip python3-venv yt-dlp xclip python3-pynvim luarocks ripgrep fd-find npm nodejs tree-sitter-cli build-essential -y
@@ -30,3 +29,17 @@ echo 'eval "$(starship init bash)"' >> ~/.bashrc
 # wget -O ~/.config/starship.toml https://raw.githubusercontent.com/amonetlol/terminal-bash/refs/heads/main/starship.toml
 # setup 2
 wget -O ~/.config/starship.toml https://raw.githubusercontent.com/amonetlol/terminal-bash/refs/heads/main/starship-titus.toml
+
+# Bibata cursor
+sudo apt install bibata-cursor-theme -y
+gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+
+# configurando alias
+echo "alias up2='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
+echo "alias .r='source ~/.bashrc'" >> ~/.bashrc
+echo "alias al='nvim ~/.bashrc'" >> ~/.bashrc
+echo "alias ft='fastfetch --logo small'" >> ~/.bashrc
+echo "alias nv='nvim'" >> ~/.bashrc
+echo "alias nup='nvim --headless -c \"Lazy update\" -c \"qa\"'" >> ~/.bashrc
+echo "alias fup='flatpak update -y'" >> ~/.bashrc
+source ~/.bashrc
