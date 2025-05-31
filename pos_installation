@@ -14,7 +14,8 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'Cousine Nerd Font
 echo -e "Nerd Fonts: \ue0b0 \ue0a0"
 
 #Neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+#curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+curl -LO https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.appimage
 chmod u+x nvim-linux-x86_64.appimage
 sudo mkdir -p /opt/nvim
 sudo mv nvim-linux-x86_64.appimage /opt/nvim/nvim
