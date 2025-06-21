@@ -23,6 +23,10 @@ apps=("btop"
       "stoken-gui-small"
       "tint2"
       "yad-settings"
+      "org.gnome.Extensions"
+      "fish"
+      "yad-icon-browser"
+      "micro"
       )
 
 mkdir -p ~/.local/share/applications/
