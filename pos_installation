@@ -21,7 +21,7 @@ sudo mkdir -p /opt/nvim
 sudo mv nvim-linux-x86_64.appimage /opt/nvim/nvim
 echo 'export PATH="$PATH:/opt/nvim/"' >> ~/.bashrc
 
-sudo apt install python3 python3-pip python3-venv yt-dlp xclip wl-clipboard python3-pynvim luarocks ripgrep fd-find npm nodejs build-essential -y
+sudo apt install python3 python3-pip python3-venv yt-dlp xclip wl-clipboard python3-pynvim luarocks ripgrep fd-find npm nodejs lua5.1 build-essential -y
 git clone https://github.com/amonetlol/neovim-kickstart-config.git ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 rm -rf ~/.config/nvim/.gitignore
@@ -43,6 +43,11 @@ wget -O ~/.config/starship.toml https://raw.githubusercontent.com/amonetlol/term
 # Bibata cursor
 sudo apt install bibata-cursor-theme -y
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+
+#### Temas e Icones ####
+# https://github.com/yeyushengfan258/Reversal-gtk-theme
+# https://github.com/yeyushengfan258/McMuse-icon-theme
+# sudo apt install gnome-themes-extra gtk2-engines-murrine
 
 # configurando alias
 echo "alias up2='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
