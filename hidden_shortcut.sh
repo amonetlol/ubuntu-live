@@ -27,6 +27,7 @@ apps=("btop"
       "fish"
       "yad-icon-browser"
       "micro"
+      "yelp"
       )
 
 mkdir -p ~/.local/share/applications/
